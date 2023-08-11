@@ -77,6 +77,25 @@ Sometimes you want to show live data, e.g. number of cyclists today or a motoris
 
 - do the rendering on the VMS. This requires some sort of markup or template language (See below about HTML) to define how and where the data is displayed. Local rendering on the VMS is required if you need fast updates. e.g. in response to a cyclist or motorist passing the VMS. A benefit is that it can work withouh network connection.
 
+## Template system
+Suppose we want to display live data on a VMS, e.g. "Number of cyclists today: 4323". The number must update dynamically as cyclists pass a sensor.
+
+If HTML is used, this could be handled with Javascript.
+
+In case HTML is not used, we need a way to reference dynamic data that comes from e.g. a detector logic. One idea is to use string interpolation, like it's done in programming languages:
+
+Today's date: #{date}
+Cyclists today: #{detector_logic(DL001_CAMERA_DAILY_COUNTER).total}
+Stuff inside #{} is not shown directly, but is instead an expression interpreted using eg. Javascript of LUA. The output of the expression is what will be shown on the display.
+
+We would require certain functions to be present, that allows you to fetch data from dynamic sources, like detector_logic() used above.
+
+In this example above DL001_CAMERA_DAILY_COUNTER would be detector logic consisting of a counter that resets nighty. You would get an object with specific fields, perhaps things like total, current, status, name, etc.
+
+The VMS would be responsible for updating the display whenever the expression changes (ie. the counter changes).
+
+Common things like date(), now() and string operations might be supported.
+
 ## Slots
 The VMS should be able to store a  number of different slots (eg. 256), which is simply the content shown on all displays. It should be easy to switch which is currently shown. You should also be able to read/delete these slots.
 
