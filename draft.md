@@ -1,5 +1,4 @@
 # Variable Message Sign (VMS) SXL
-Version 0.1
 
 ## About
 This document outlines what should go into a standardized RSMP SXL for Variable Message Signs.
