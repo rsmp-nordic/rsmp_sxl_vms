@@ -104,3 +104,5 @@ The VMS should be able to store a  number of different slots (eg. 256), which is
 ## Display Rules
 Different countries (or authorities) might have different rules for what can be display, font size, colors, etc. This could either be enforced by the VMS, or it could be handled by the supervisor system?
 
+## Disconnects
+It must be possible to configure what happens if the network is lost. For example, you might want the VMS to return to a default image, or go blank, after 10 minutues without network connection.
