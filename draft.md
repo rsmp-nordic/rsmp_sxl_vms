@@ -83,9 +83,12 @@ If HTML is used, this could be handled with Javascript.
 
 In case HTML is not used, we need a way to reference dynamic data that comes from e.g. a detector logic. One idea is to use string interpolation, like it's done in programming languages:
 
+```
 Today's date: #{date}
 Cyclists today: #{detector_logic(DL001_CAMERA_DAILY_COUNTER).total}
-Stuff inside #{} is not shown directly, but is instead an expression interpreted using eg. Javascript of LUA. The output of the expression is what will be shown on the display.
+```
+
+Stuff inside #{} is not shown directly, but is instead an expression interpreted using eg. Javascript or LUA. The output of the expression is what will be shown on the display.
 
 We would require certain functions to be present, that allows you to fetch data from dynamic sources, like detector_logic() used above.
 
