@@ -11,8 +11,15 @@ The document is work-in-progress, and will be expanded and structured as the wor
 
 All displays have a physical width/heigh.
 
-### Fixed display
-- has a fixed message/icon
+### Lamp
+A type of lamp, or set of lamps, eg:
+- warning lamps
+- a ring around a speed limit
+- a green/red light indicating free parking spaces
+  
+### Icon display
+- has one or more fixed messages/icon
+- can either show only one icon (single), or more than one at the same time (multi)
 - can be turned on/off
 - blinking
 
@@ -20,7 +27,6 @@ All displays have a physical width/heigh.
 - shows text characters
 - has a width/heigh (in characters). how would width be measured if a variable-width font is used?
 - text is UTF-8 encoded, to make it easy to handle all international characters, as well as emoji.
-- text direction must be supported to support scripts like arabic, hebrew of urdo. (japanese an chinese sometimes are right-to-left.)
 - colors?
 - scrolling?
 - bold/italic/underlined?
