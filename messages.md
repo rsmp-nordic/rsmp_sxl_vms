@@ -3,6 +3,21 @@ Messages for VMS, including commands, statues and alarms.
 
 ## System
 - SetDisconnectTimeout: define what to show when network connection is lost, and how soon.
+- SetTemperatureThreshold: set temperature alarm threshold
+- SetHumidityThreshold: set humidity alarm threshold
+- SetDoorThreshold: set duration alarm threshold
+
+## Sensors
+- Temperature: temperature status
+- Temperature: humidity status
+- Door: door status
+- PixelErrors: pixel error status
+
+## Alarms
+- Temperature: temperature is too high
+- Humidity: humidity is too high
+- Door open: door is open
+- Legibility: display is hard to read, due to failed pixel or characteres failing
 
 ## Arrangement
 - GetDisplays: get info on all displays (arrangement, size, resolution, colors, type, functionality, etc.)
@@ -36,11 +51,4 @@ Messages for VMS, including commands, statues and alarms.
 - GetBitmap: download previsouly uploaded bitmap
 - GetSnapshot: download currently displayed content as PNG
 - GetStreamingLink: get link to rtsp stream that showns the live content of display.
-
-## Alarms
-- Temperature: temperature is too high
-- Humidity: humnidity is too high
-Door open: door is open
-Legibility: display is hard to read, due to failed pixel or characteres failing
-
 
