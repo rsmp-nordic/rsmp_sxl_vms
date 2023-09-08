@@ -57,16 +57,6 @@ Displays can be mounted in various ways (e.g. stacked vertically or horizontally
 
 Multiple displays can potentially be treated as a single larger display. Eg. if you have three stacked text displays, you could interact with them as a single text display with a height of 3. Two pixels displays side-by-side can be treated as a single wide image display. But this could perhaps be handled by device, so it just presents a single display (component).
 
-## Introspection
-It must be possible to read the capabilities of the VMS, including a list of displays and the size, colors, etc of each.
-
-It must be possible to read the curent content of the displays. You should be able to subscribe to the content so you show a live view e.g. in yout supervisor system.
-
-## Alarms and errors
-A suiteable set of alarms must be defined, so you can get notified whenever there are failed pixels/displays, or other types of malfunctions.
-
-Common types of alarms could later be factored out into a generalized SXL module related to system status.
-
 ## Blinking
 The simplest is to alternative between content and a blank screen at some configurable interval. This could be supported for all types of display.
 
@@ -83,12 +73,24 @@ Sometimes you want to show live data, e.g. number of cyclists today or a motoris
 
 - do the rendering on the VMS. This requires some sort of markup or template language (See below about HTML) to define how and where the data is displayed. Local rendering on the VMS is required if you need fast updates. e.g. in response to a cyclist or motorist passing the VMS. A benefit is that it can work withouh network connection.
 
-## Templating
+We should support both models.
+
+## Templates
 Suppose we want to display live data on a VMS, e.g. "Number of cyclists today: 4323". The number must update dynamically as cyclists pass a sensor.
 If HTML is used, this could be handled with Javascript. If not, we need some kind of template language to define where dynamic data goes.
 
 ## Slots
 The VMS should be able to store a  number of different slots, which is simply the content shown on all displays. It should be easy to switch which is currently shown. You should also be able to read/delete these slots.
+
+## Introspection
+It must be possible to read the capabilities of the VMS, including a list of displays and the size, colors, etc of each.
+
+It must be possible to read the curent content of the displays. You should be able to subscribe to the content so you show a live view e.g. in yout supervisor system.
+
+## Alarms and errors
+A suiteable set of alarms must be defined, so you can get notified whenever there are failed pixels/displays, or other types of malfunctions.
+
+Common types of alarms could later be factored out into a generalized SXL module related to system status.
 
 ## Disconnects
 It must be possible to configure what happens if the network is lost. For example, you might want the VMS to return to a default image, or go blank, after 10 minutues without network connection.
