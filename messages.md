@@ -2,8 +2,10 @@
 Messages for VMS, including commands, statues and alarms.
 
 ## System
-- SetDisconnectTimeout: define what to show when network connection is lost, and how soon.
-- SetTemperatureThreshold: set temperature alarm threshold
+- SetDisconnectTimeout: define what to show (show specific content, or turn off) when network connection is lost, and how soon. is this relevant for all vms types?
+
+Are these needed? Or is this just defined once for all in the hardware?
+- SetTemperatureThreshold: set temperature alarm threshold (low, high)
 - SetHumidityThreshold: set humidity alarm threshold
 - SetDoorThreshold: set duration alarm threshold
 
