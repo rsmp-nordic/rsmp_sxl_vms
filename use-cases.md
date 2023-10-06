@@ -53,3 +53,9 @@ Text information. Can be part of another sign or stand alone.
 ## Bicycle VMS
 One large pixel display, which can shown different things.
 - 1 bitmap (messages, icons, etc)
+
+
+## Bus stop information
+- 2 text displays stacked vertically, one with larger text, the other with smaller text
+Page 59:
+https://www.vejdirektoratet.dk/sites/default/files/2023-07/Projektering%20af%20variable%20vejtavler%20og%20vognbanesignaler%20webtilgængelig.pdf

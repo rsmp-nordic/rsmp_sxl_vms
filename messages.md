@@ -31,6 +31,7 @@ Are these needed? Or is this just defined once for all in the hardware?
 - SetVisible: turn display on/off
 - SetBrightness: set brightness
 - SetBlink: set on/off tiems, eg. 1s on, 0.5s off, or disable blinking
+- SetMinInterval: The minimum time between changes, e.g. off, 1s, 20s or 1m. 
 
 ## Lamp
 - SetColor: set color
@@ -43,7 +44,8 @@ Are these needed? Or is this just defined once for all in the hardware?
 ## Text Display
 - SetText: set text
 - SetMarkdown: set markdown, use tags for bold, italics, etc.
-- SetMode: if there is more text than can be shown, should we truncate, scroll or paginate, étc?
+- SetMode: if there is more text than can be shown, should we truncate, scroll or paginate, etc?
+- SetTextRule: define a rule for what text can be shown, as either regex or string list.
 
 ## Pixel display
 - SetBitmap: upload lossless image as PNG, BMP or GIF
