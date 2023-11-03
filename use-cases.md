@@ -54,6 +54,14 @@ Text information. Can be part of another sign or stand alone.
 One large pixel display, which can shown different things.
 - 1 bitmap (messages, icons, etc)
 
+## School Sign
+One large pixel display, which usually display a standard "school ahead" sign, but can also show speed limit.
+- 1 bitmap (messages, icons, etc)
+
+## Your Speed
+A sign that shows your speed when you drive by, and flashes if the speed is too high.
+- 1 text (your speed, typically two digits)
+- 1 lamp (set of blinking warning lights)
 
 ## Bus stop information
 - 2 text displays stacked vertically, one with larger text, the other with smaller text
