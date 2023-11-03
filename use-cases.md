@@ -69,4 +69,5 @@ Page 59:
 https://www.vejdirektoratet.dk/sites/default/files/2023-07/Projektering%20af%20variable%20vejtavler%20og%20vognbanesignaler%20webtilgængelig.pdf
 Some use-cases include hardware that is very limited, and sometimes on battery. In these cases, you might want a very simple interface to just monitor the health of the device, and have all logic in the device using custom logic and custom handling of the display.
 Or you could opt for a more generel device that is more flexible, where you use the vms sxl functions to change content.
- 
+ - 2 texts
+
