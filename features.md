@@ -16,6 +16,7 @@ All displays have a physical width/heigh.
 A type of lamp, or set of lamps, eg:
 - warning lamps
 - a ring around a speed limit
+- a frame around a text or icon
 - a green/red light indicating free parking spaces
   
 ### Icon display
