@@ -28,6 +28,7 @@ A type of lamp, or set of lamps, eg:
 - shows text characters
 - has a width/heigh (in characters). how would width be measured if a variable-width font is used?
 - text is UTF-8 encoded, to make it easy to handle all international characters, as well as emoji.
+- inverse (white on black, vs. black on white)
 - colors?
 - scrolling?
 - bold/italic/underlined?
