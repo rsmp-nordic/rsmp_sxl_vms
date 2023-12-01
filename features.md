@@ -8,8 +8,8 @@ The SXL aims to support most VMS types commonly used by road authorities, includ
 
 ## Displays (components)
 - A VMS can have either a single display, or multiple displays.
-- Each component is an RSMP component.
-- Each display can of type lamp, text, image or html.
+- Each display is an RSMP component.
+- Each display can of type lamp, icon, text, image or html.
 
 All displays have a physical width/heigh.
 
@@ -54,6 +54,13 @@ It would also be good to support vector graphics with SVG. (This would be an arg
 Compressed formats like JPG could also be used, and might be useful if you use an VMS more like an info/ad screen and show a large photo/artwwork/ad. But usually we would probably  be better off with a lossless or vector format because displays typically have rather limited resolution.
 
 All image displays can potentially use the same api - but a depending on the capabilities, the result might be different. Ie. if you show a color image on a monochrome or multichrome display, the nearest possible color might be used. If you send an image with a size different from the image, it can be resized.
+
+## HTML display
+- can display HTML, which is either send directly or fetched from an URL.
+- can run Javascript to run animations, fetch and display live data etc.
+
+HTML is a flexible solutions for complex or dynamic content, or when you want control over layout.
+An HTML display would typically run a browswer in full-screen kiosk mode. RSMP is used to control what page is loaded, and whether the display is on or off.
 
 ## Display arrangements
 Displays can be mounted in various ways (e.g. stacked vertically or horizontally). Displays can also be rotated. The VSM must have a config reflecting (much like you setup multiple screens on a PC).
