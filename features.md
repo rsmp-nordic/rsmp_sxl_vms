@@ -4,6 +4,7 @@
 This document outlines what should go into a standardized RSMP SXL for Variable Message Signs.
 The document is work-in-progress, and will be expanded and structured as the working group continues discussions.
 
+The SXL aims to support most VMS types commonly used by road authorities, including speed limits signs, bicycle barometers, motorway control systems, bus stops, etc.
 
 ## Displays (components)
 - A VMS can have either a single display, or multiple displays.
