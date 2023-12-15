@@ -42,6 +42,19 @@ Triangular warning sign
 - Icon
 - Optional text
 
+### Animal crossings
+Warns when animals are crossing the road. Usually just a warning icon, without any blinking lamps.
+- Icon
+
+### Dynamic speed bumps
+Bumps that are activated if speed is too high. Includes the bump in the road, but also a VMS.
+- Icon
+
+### Ghost driver warning
+Warn drivers if they are avbout to drive the wrong way on the highway. No variable content, except 
+- Warning lamps
+- Lane-lights
+
 ## Urban
 ### Parking space sign
 Shows free spaces left at different parking spots. Text is monochrome, but can sometimes change color depending on whether there are free spots, or not:
