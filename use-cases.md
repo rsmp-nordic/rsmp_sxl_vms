@@ -12,7 +12,7 @@ A combined  sign with warning lights, a large icon and some text. It's placed ou
 - 1 text (warning message, two lines)
 - 1 lamp (set of blinking warning lights)
 
-## Motorway control system
+### Motorway control system
 Typically above the lanes of the motorway.
 For each lane a few things can be shown:
 - speed limit (number inside a ring)
