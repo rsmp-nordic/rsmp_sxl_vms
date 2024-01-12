@@ -4,12 +4,16 @@
 This document outlines what should go into a standardized RSMP SXL for Variable Message Signs.
 The document is work-in-progress, and will be expanded and structured as the working group continues discussions.
 
-The SXL aims to support most VMS types commonly used by road authorities, including speed limits signs, bicycle barometers, motorway control systems, bus stops, etc.
+The SXL aims to support the VMS types [commonly used by](use-cases.md) road authorities, including speed limits signs, bicycle barometers, motorway control systems, bus stops, etc.
 
-## Displays (components)
-- A VMS can have either a single display, or multiple displays.
-- Each display is an RSMP component.
-- Each display can of type lamp, icon, text, image or html.
+## Physical Elements
+A VMS has one or more physical **elements**, including lamps, icons, text panels or pixels displays. Together, all these elements are arrangened into a VMS __panel__.
+
+## Components
+A VMS compomnents is a way to control a part of the VMS. In some casese a component map one-to-one to a physical element. But a pixel display can have multiple compoments that define virtual elements. For example, a pixel display can be used to show and easily control an icon at the top and some text below.
+
+- A VMS can have either a single component, or multiple components.
+- Each component can be of type lamp, icon, text, image or html.
 
 All displays have a physical width/heigh.
 
