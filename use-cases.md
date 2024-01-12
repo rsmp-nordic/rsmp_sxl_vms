@@ -29,11 +29,12 @@ This type of use-case could be handled by having an icon display and a lamp (set
 
 ### Speed limit sign
 ![speed limit](img/speed_limit_sign.png)
+![speed limit 40](img/speed_limit_40.png)
 
-Looks essentially like a tradional static sign, but is variable. A circle with a number inside, and some text underneath.
-- 1 icon (showing 50/60/70)
-- 1 text (optional)
-- 1 lamp (ring around the sign)
+Looks essentially like a tradional static sign, but is variable. A circle or box with a number inside, and some text underneath.
+- 1 icon (showing 40/50/60/70)
+- 1 lamp (optional, bright border around the sign)
+- 1 text (optional, message below icon)
 
 ### Warning sign
 ![warning sign](img/triangular_warning_sign.png)
@@ -66,14 +67,20 @@ Shows free spaces left at different parking spots. Text is monochrome, but can s
 Text information. Can be part of another sign or stand alone.
 
 ### Bicycle VMS
+![bicycle vms](img/bicycle_vms.png)
+
 One large pixel display, which can shown different things.
 - 1 bitmap (messages, icons, etc)
 
 ### School Sign
+![school sign](img/school_sign.png)
+
 One large pixel display, which usually display a standard "school ahead" sign, but can also show speed limit.
 - 1 bitmap (messages, icons, etc)
 
-### My Speed
+### Your Speed
+![your speed](img/your_speed.png)
+
 A sign that shows your speed when you drive by, and flashes if the speed is too high.
 - 1 text (your speed, typically two digits)
 - 1 lamp (set of blinking warning lights)
