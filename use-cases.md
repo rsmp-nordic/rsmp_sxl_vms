@@ -56,7 +56,7 @@ Warn drivers if they are avbout to drive the wrong way on the highway. No variab
 - Warning lamps
 - Lane-lights
 
-### Dynimic information
+### Dynamic information
 Can be used to provide info about e.g. traffic, travel times, weather, incidents, etc.
 - Text
 - Symbol (optional)
