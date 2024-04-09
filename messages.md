@@ -50,9 +50,12 @@ Are these needed? Or is this just defined once for all in the hardware?
 ## Pixel display
 - SetBitmap: upload lossless image as PNG, BMP or GIF
 - SetHTML: show HTML (raw HTML with inline CSS) 
-- SetURL: show a web page, referenced by a URL. network from vsm to url is required
+- SetURL: show a web page, referenced by a URL. net
+- work from vsm to url is required
 - GetPixelErrors: Get total, percentage and list of failed pixels
 - GetBitmap: download previsouly uploaded bitmap
 - GetSnapshot: download currently displayed content as PNG
 - GetStreamingLink: get link to rtsp stream that showns the live content of display.
 
+## HTML
+(todo)
