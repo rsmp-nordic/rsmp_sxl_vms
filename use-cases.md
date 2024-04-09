@@ -56,6 +56,11 @@ Warn drivers if they are avbout to drive the wrong way on the highway. No variab
 - Warning lamps
 - Lane-lights
 
+### Dynimic information
+Can be used to provide info about e.g. traffic, travel times, weather, incidents, etc.
+- Text
+- Symbol (optional)
+
 ## Urban
 ### Parking space sign
 Shows free spaces left at different parking spots. Text is monochrome, but can sometimes change color depending on whether there are free spots, or not:
