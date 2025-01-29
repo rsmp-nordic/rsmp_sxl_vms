@@ -1,4 +1,10 @@
-# VMS messages
+---
+title: Messages
+permalink: /messages/
+nav_order: 5
+---
+
+# Messages
 Messages for VMS, including commands, statues and alarms.
 
 ## System
