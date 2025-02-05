@@ -33,7 +33,7 @@ Note that it's possible to show arbitrary images on a pixel display, by using th
 ## Layouts
 The location of physical elements are fixed. Their locations can be read, but not modified.
 
-Virtual components rendered on a pixel display can moved around without the the pixel display, using a simple layout language.
+Virtual components rendered on a pixel display can be moved around within the the pixel display, using a simple layout language.
 
 The location and scaling of all component together is called an **layout**. A device that includes one or more pixel displays can have multiple layouts that you can switch between.
 
