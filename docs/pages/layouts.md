@@ -1,3 +1,9 @@
+---
+title: Layouts
+permalink: /layouts/
+nav_order: 3
+---
+
 # Layouts
 The location and scaling of all component on a Variable Message Panel together is called an **layout**.
 
