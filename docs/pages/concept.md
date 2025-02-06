@@ -9,7 +9,7 @@ There's a wide range of uses-cases and types of variable message signs. To handl
 
 Components can be used alone or combined to represent a complete VMS __panel__. For example, a panel might have just an icon, or an icon at the top with a text areas below.
 
-Each component type has a convenient set of statuses, commands and alarms (i.e. an API) used to interact with the content. For example, you can change/read the text in a text component, or change/red the icon showed by an icon component
+Each component type has a set of statuses, commands and alarms used to interact with it. For example, you can change/read the text in a text component, or change/read the icon showed by an icon component.
 
 ## Component Types
 These component types are defined:
@@ -20,25 +20,25 @@ These component types are defined:
 - HTML
 
 ## Physical vs. Virtual components
-Dedicated hardware is sometimes used for displaying a specific  type of visual element, e.g. a fixed icon shown used LEDs that can just be turned on/off, a warning lamp, or a text panel that can show text, but not icons.
+Dedicated hardware is sometimes used for displaying a specific  type of visual element, e.g. a fixed icon shown used LEDs that can just be turned on/off, warning lamps, or a dedicated text panel that can show only text.
 
-A pixel display is itself a physical elemeent, but can can render **virtual components** of other types. For example, you might show an icon and a text area on a pixel display.
+A pixel display is itself a physical element, and can can render **virtual components** of other types. For example, you might show an icon and a text area on a pixel display.
 
-You use the same components types and message APIs to interact with you content, regardless of whether that are shown using dedicated hardware, or rendered on a pixel display.
+You use the same components types and messages to interact with your content, regardless of whether that are shown using dedicated hardware, or rendered on a pixel display.
 
-The device will maintain a logical representation so you can interact with the content, e.g. read the current values. This is similar to HTML which defines content which is then rendered by the browser. You can Javascript to interact with the content, e.g. to read/write a text area. In fact, some signs might choose to use HTML as a way to render content on pixel displays, although this is up to the manufacturer. 
-
-Note that it's possible to show arbitrary images on a pixel display, by using the image component type. This cna be used if you want to do you own custom rendering of content and just send the resulting image to the display.
+Note that it's possible to show arbitrary images on a pixel display, by using the image component type. This can be used if you want to do you own custom rendering of content and just send the resulting image to the display.
 
 ## Layouts
-The location of physical elements are fixed. Their locations can be read, but not modified.
+The location of physical elements are fixed. Their locations can be read, but not modified. However, if the physical design of the panel is changed, the layout will change.
 
-Virtual components rendered on a pixel display can be moved around within the the pixel display, using a simple layout language.
+Virtual components rendered on a pixel display can be arranged anywhere on the display.
 
-The location and scaling of all component together is called an **layout**. A device that includes one or more pixel displays can have multiple layouts that you can switch between.
+The arrangement of components is called a [layout][layouts.md), and is specified using HTML and CSS. Tailwind is used to simplify working with CSS.
+
+an have multiple layouts and typically uses an HTML library to render content on the display.
 
 ## HTML and Dynamic Content
-You can use HTML components to render advanced content, including dynamic content.
+You can use HTML components to render dynamic content.
 
 Javascript can be used to fetch data from APIs, dynamically update content, etc.
 
