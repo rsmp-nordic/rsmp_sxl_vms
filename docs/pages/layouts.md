@@ -23,6 +23,18 @@ https://play.tailwindcss.com/RVlvz8Xcx9
 
 HTML `id` attributes are used to link HTML elements with RSMP components, as can be seen above.
 
+
+Here's an example with the text panels stacked vertically:
+
+```html
+<div class="flex flex-col">
+  <div class="border-2 indent-8 font-mono font-bold" style="height: 25vw; font-size: 16vw; overflow: hidden;">DISPLAY #1</div>
+  <div class="border-2 indent-8 font-mono font-bold" style="height: 25vw; font-size: 16vw;">DISPLAY #2</div>
+  <div class="border-2 indent-8 font-mono font-bold" style="height: 25vw; font-size: 16vw;">DISPLAY #3</div>
+</div>
+```
+https://play.tailwindcss.com/CijRwCvTVp
+
 ## Physical Components
 The location of physical elements can be read, but not modified. The layout of physical elements is usually fixed, but can change in case the panel is upgraded or changed.
 
