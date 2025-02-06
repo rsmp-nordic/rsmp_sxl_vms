@@ -6,6 +6,7 @@ nav_order: 6
 
 # Messages
 [preliminary]
+
 Messages for VMS, including commands, statues and alarms.
 
 ## System
@@ -65,4 +66,6 @@ Are these needed? Or is this just defined once for all in the hardware?
 - GetStreamingLink: get link to rtsp stream that showns the live content of display.
 
 ## HTML
-(todo)
+- SetHTML: set HHTML eiter directly or from an URL
+- Reload: reload the HTML display
+- GetConsole: get the web console of the HTML renderer
