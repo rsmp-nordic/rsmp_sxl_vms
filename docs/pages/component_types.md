@@ -1,10 +1,11 @@
 ---
-title: Component Types
-permalink: /component-types/
+title: Components
+permalink: /components/
 nav_order: 5
 ---
 
-# Component Types
+# Components
+The following compoent types are defined.
 
 ## Lamp
 One or more lamps controlled together as a single entity, e.g.:
@@ -17,11 +18,7 @@ One or more lamps controlled together as a single entity, e.g.:
 - turn on/off
 
 ## Icon
-An icon area that can show an icon. Optinally you can switch between different icons, e.g.:
-
-- roadworks
-- animals on the road
-- speed limit
+An icon. Optionally you can switch between different icons.
 
 ### Interface
 - turn on/off
@@ -29,19 +26,14 @@ An icon area that can show an icon. Optinally you can switch between different i
 - set blinking
 
 ## Text display
-Used for showing one or more lines of text.
-
-It has a width and height measured in characters.
-Text is UTF-8 encoded, to make it easy to handle international characters, as well as emoji.
+Used for showing one or more lines of text. Text is UTF-8 encoded.
 
 A fixed-width text display is the simplest. The display consists of blocks, each with a fixed width. Each block can show a single character. A fixed numbers of characters fit per line.
 Only fixed-width fonts can be shown.
 
-A variable-width text display is not divided into horizonal blocks and is essential ly a type of pixel display. Different characters take up different amount of horizonal space.
-The number of characters that fit on what characters are shown, the font and the font-size. The readability can be better that a fixed-width font.
-Fixed-width font can be shown on a variable-width display.
+A variable-width text display is not divided into horizonal blocks and is essentially a type of pixel display. Different characters take up different amount of horizonal space. The number of characters that fit on what characters are shown, depends font and the font-size.
 
-### Interfact
+### Interface
 - set text
 - set font
 - set horizonal and vertical alignment
@@ -49,9 +41,8 @@ Fixed-width font can be shown on a variable-width display.
 - read dimensions in characters and pixels
 - set paging/scrolling
 
-
-## Image display
-Used for display arbitrary images. Can only be shown on a pixel display.
+## Image
+Used to display arbitrary images. Can only be shown on a pixel display.
 It has a dimension is cm and in pixels, and a corresponding pixel resultion in ppcm (pixels per cm).
 It can be monochrome (1 bit), multichrome (2 or more bits), or full color rgb (24 bit)
 
@@ -66,17 +57,10 @@ Images will be converted/rescaled to match the hardware capabiltiy resultion and
 - read bit depth
 - set image
 
-
 ## HTML display
-Used for displaying content with advanced layout or dynamic content. Javascrip can be used to handle dynamic aspeects, e.g. fetch data from APIs and update content.
+Used for displaying dynamic content using JavaScript, e.g. by fetching data from APIs and updating content. However, there is no user input.
 
-HTML is a flexible solutions for complex or dynamic content, or when you want control over layout.
-An HTML display would typically run a browswer in full-screen kiosk mode with no user input.
-
-RSMP is used to control what page is loaded, and whether the display is on or off.
-
-There is no user input.
-
+RSMP is used to control what HTML is shown, and whether the display is on or off.
 The HTML source be be send directly, or fetched from an URL.
 
 ### Interface
