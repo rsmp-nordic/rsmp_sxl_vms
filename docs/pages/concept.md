@@ -33,7 +33,7 @@ The location of physical elements are fixed. Their locations can be read, but no
 
 Virtual components rendered on a pixel display can be arranged anywhere on the display.
 
-The arrangement of components is called a [layout][layouts.md), and is specified using HTML and CSS. Tailwind is used to simplify working with CSS.
+The arrangement of components is called a [layout](layouts.md), and is specified using HTML and CSS. Tailwind is used to simplify working with CSS.
 
 an have multiple layouts and typically uses an HTML library to render content on the display.
 
