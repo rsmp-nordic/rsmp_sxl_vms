@@ -5,6 +5,7 @@ nav_order: 6
 ---
 
 # Messages
+[preliminary]
 Messages for VMS, including commands, statues and alarms.
 
 ## System
