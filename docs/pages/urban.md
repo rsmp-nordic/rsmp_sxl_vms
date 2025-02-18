@@ -11,24 +11,24 @@ Shows free spaces left at different parking spots. Text is monochrome, but can s
 - 3 texts (showing only integers)
 
 ## Text sign
-![text sign](/assets/images/text_sign.png)
+![text sign]({{site.url}}/assets/images/text_sign.png)
 
 Text information. Can be part of another sign or stand alone.
 
 ## Bicycle VMS
-![bicycle vms](/assets/images/bicycle_vms.png)
+![bicycle vms]({{site.url}}/assets/images/bicycle_vms.png)
 
 One large pixel display, which can shown different things.
 - 1 bitmap (messages, icons, etc)
 
 ## School Sign
-![school sign](/assets/images/school_sign.png)
+![school sign]({{site.url}}/assets/images/school_sign.png)
 
 One large pixel display, which usually display a standard "school ahead" sign, but can also show speed limit.
 - 1 bitmap (messages, icons, etc)
 
 ## Your Speed
-![your speed](/assets/images/your_speed.png)
+![your speed]({{site.url}}/assets/images/your_speed.png)
 
 A sign that shows your speed when you drive by, and flashes if the speed is too high.
 - 1 text (your speed, typically two digits)
