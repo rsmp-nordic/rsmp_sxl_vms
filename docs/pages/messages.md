@@ -42,30 +42,29 @@ Are these needed? Or is this just defined once for all in the hardware?
 - SetMinInterval: The minimum time between changes, e.g. off, 1s, 20s or 1m. 
 
 ## Lamp
-- SetColor: set color
-- SetBlinking: set blinking pattern
+- Activate: turn on/off
+- Color: set color
+- Blinking: set blinking pattern
 
-## Icon Display
-- SelectIcon: choose which icon to show, using key (eg. 'warning')
-- GetIcons: get a list of icons that can be shown, by keys (eg. 'warning', 'ok', 'stop')
+## Icon
+- Select: choose which icon to show, using key (eg. 'warning')
+- List: get a list of icons that can be shown, by keys (eg. 'warning', 'ok', 'stop')
+- Upload/Rename/Delete: manage icons on device
 
-## Text Display
-- SetText: set text
-- SetMarkdown: set markdown, use tags for bold, italics, etc.
-- SetMode: if there is more text than can be shown, should we truncate, scroll or paginate, etc?
-- SetTextRule: define a rule for what text can be shown, as either regex or string list.
+## Text
+- Text: set text
 
-## Pixel display
-- SetBitmap: upload lossless image as PNG, BMP or GIF
-- SetHTML: show HTML (raw HTML with inline CSS) 
-- SetURL: show a web page, referenced by a URL. net
-- work from vsm to url is required
-- GetPixelErrors: Get total, percentage and list of failed pixels
-- GetBitmap: download previsouly uploaded bitmap
-- GetSnapshot: download currently displayed content as PNG
-- GetStreamingLink: get link to rtsp stream that showns the live content of display.
+## Image
+- Select
+- Upload/Rename/Delete
 
 ## HTML
-- SetHTML: set HHTML eiter directly or from an URL
+- HTML: set HTML either as code or from link
+- Snapshot: download currently displayed content as PNG
 - Reload: reload the HTML display
-- GetConsole: get the web console of the HTML renderer
+- Console: get the web console of the HTML engine, e.g. to check errors
+- Zoom: control zoom level of HTML renderer
+
+## Pixel Display
+- Dimensions: get physical size and pixels
+- PixelErrors: Get total, percentage and list of failed pixels
