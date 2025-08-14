@@ -19,7 +19,7 @@ For example, a panel with a P-icon with a blue border and a text field below can
 </div>
 
 ```
-https://play.tailwindcss.com/RVlvz8Xcx9
+https://play.tailwindcss.com/eDYSbZzxgu
 
 Here's an example of three text panels stacked vertically:
 
